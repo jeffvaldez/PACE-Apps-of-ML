@@ -7,14 +7,14 @@ Once connected to the VPN, go to the [PACE Open OnDemand ICE](https://ondemand-i
 Submit an Interactive Jupyter job to the PACE-ICE default queue on the PACE Open OnDemand ICE website:
 - (For CPU Environment)
   - Start a Jupyter notebook job. Click on Interactive Apps (dropdown menu) -> Jupyter
-  - Select Anaconda Module: Anaconda 3 - 2022.05
-  - Select Quality of Service: pace-ice
-  - Select Node Type: Intel CPU<br>
+  - Select: Anaconda Module: Anaconda 3 - 2022.05
+  - Select: Quality of Service: pace-ice
+  - Select: Node Type: Intel CPU
 - (For GPU Environment)
   - Start a Jupyter notebook job. Click on Interactive Apps (dropdown menu) -> Jupyter
-  - Select Anaconda Module: Anaconda 3 - 2022.05
-  - Select Quality of Service: pace-ice
-  - Select Node Type: NVIDIA GPU V100 16GB
+  - Select: Anaconda Module: Anaconda 3 - 2022.05
+  - Select: Quality of Service: pace-ice
+  - Select: Node Type: NVIDIA GPU V100 16GB
  
 <p>2. This will submit an Interactive Jupyter job to the scheduler. Click on your Interactive Sessions tab, click on "Connect to Jupyter" once your job is running.</p>
 
@@ -35,17 +35,16 @@ Once the Jupyter job has started, run the following commands in a Terminal to pr
 3. Clone this repo to your home directory and change directory:
   - `git clone https://github.com/jeffvaldez/PACE-Apps-of-ML.git`
 4. From the main notebook dashboard in Jupyter, launch the notebook:
+  - Open "PACE-Apps-of-ML/PACE-App_of_ML.ipynb"
   - (For CPU Environment):
-    - Open "PACE-Apps-of-ML/PACE-App_of_ML-CPU.ipynb"
+    - Select: Kernel -> Change Kernel -> Python [conda env:.conda-PACE-ML-CPU-env]
   - (For GPU Environment):
-    - Open "PACE-Apps-of-ML/PACE-App_of_ML-GPU.ipynb"
+    - Select: Kernel -> Change Kernel -> Python [conda env:.conda-PACE-ML-GPU-env]
 
-
-
-## Limited Space in Home (Terminal)
+## Limited Space in Home (in Terminal)
 If there not enough space in home folder, you could alternatively create the environment in the temporary Scratch running the below commands before conda create (no prefix): 
   - `mkdir ${TMPDIR}/.conda`
   - `ln -s ${TMPDIR}/.conda ${HOME}/.conda`
 
-## Save Environment
+## Save Environment (in Terminal)
 *If you want to save your environment, you can run commands like `conda env export` or `conda env export --from-history` or `pip freeze`*
