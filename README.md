@@ -25,11 +25,13 @@ Once the Jupyter job has started, run the following commands in a Terminal to pr
   - (For CPU Environment):
     - `conda create -y -n PACE-ML-CPU-env python=3.10 ipykernel`
     - `conda activate PACE-ML-CPU-env`
+    - `conda install pip`
     - `pip install intel-tensorflow-avx512==2.9.1 matplotlib pandas seaborn scikit-learn`
     - `python -m ipykernel install --user --name PACE-ML-CPU-env`
   - (For GPU Environment):
     - `conda create -y -n PACE-ML-GPU-env python=3.10 ipykernel`
     - `conda activate PACE-ML-GPU-env`
+    - `conda install pip`
     - `pip install tensorflow[and-cuda] matplotlib pandas seaborn scikit-learn`
     - `python -m ipykernel install --user --name PACE-ML-GPU-env`
 3. Clone this repo to your home directory and change directory:
