@@ -7,12 +7,12 @@ Once connected to the VPN, go to the [PACE Open OnDemand ICE](https://ondemand-i
 Submit an Interactive Jupyter job to the PACE-ICE default queue on the PACE Open OnDemand ICE website:
 - (For CPU Environment)
   - Start a Jupyter notebook job. Click on Interactive Apps (dropdown menu) -> Jupyter
-  - Select: Anaconda Module: Anaconda 3 - 2022.05
+  - Select: Anaconda Module: Anaconda 3 - 2023.03
   - Select: Quality of Service: pace-ice
   - Select: Node Type: Intel CPU
 - (For GPU Environment)
   - Start a Jupyter notebook job. Click on Interactive Apps (dropdown menu) -> Jupyter
-  - Select: Anaconda Module: Anaconda 3 - 2022.05
+  - Select: Anaconda Module: Anaconda 3 - 2023.03
   - Select: Quality of Service: pace-ice
   - Select: Node Type: NVIDIA GPU V100 16GB
  
