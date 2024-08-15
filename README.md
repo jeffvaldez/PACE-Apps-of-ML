@@ -43,7 +43,7 @@ Once the Jupyter job has started, run the following commands in a Terminal to pr
     - Select: Kernel -> Change Kernel -> PACE-ML-GPU-venv
 
 ## Limited Space in Home (in Terminal)
-If there not enough space in home folder, you could alternatively create the environment in the temporary Scratch. Before executing the commands listed above, go to your temporary scratch: 
-  - `cd ${TMPDIR}`
-Then, create the virtual environment as described above. This environment will disappear after the session is over.
+If there not enough space in home folder, you could alternatively create the environment in the scratch folder. Before executing the commands listed above, go to your scratch storage: 
+  - `cd ~/scratch`
+Then, create the virtual environment as described above. 
 
