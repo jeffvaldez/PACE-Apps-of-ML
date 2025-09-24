@@ -27,6 +27,7 @@ Once the Jupyter job has started, run the following commands in a Terminal to pr
     - `source PACE-ML-CPU-venv/bin/activate`
     - `pip install --upgrade pip`
     - `pip install ipykernel matplotlib pandas seaborn scikit-learn tensorflow-cpu`
+    - `python -m ipykernel install --user --name PACE-ML-CPU-venv`
   - (For GPU Environment; 5.2 GB):
     - `python3 -m venv PACE-ML-GPU-venv`
     - `source PACE-ML-GPU-venv/bin/activate`
